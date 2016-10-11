@@ -1,16 +1,27 @@
 (function() {
 
-  //var numberOfRows = 15; //number of rows in the grid
-  //var numberOfCols = 15; //number of columns in the grid
   var canvas = $('#canvas'); //placement area - like paper for drawing
+  var updateGridButton = $('#update-grid-button');
+  var numberOfRowsInput = $('#number-of-rows');
+  var numberOfColsInput = $('#number-of-cols');
 
   makeGrid(15, 15);
-  clearGrid();
-  makeGrid(30, 30);
   $('.cell').on('click', changeColor);
+  updateGridButton.on('click', updateGridSize);
 
   function clearGrid(){
     canvas.empty();
+  }
+
+  function updateGridSize(){
+    clearGrid();
+    //grab the number of columns input
+    var newColNumber = parseInt(numberOfColsInput.val());
+    //grab number of rows input
+    var newRowNumber = parseInt(numberOfRowsInput.val());
+    //make grid based off new numbers
+    makeGrid(newRowNumber, newColNumber);
+    $('.cell').on('click', changeColor);
   }
 
   function changeColor(event){
