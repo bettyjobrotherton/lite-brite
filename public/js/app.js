@@ -2,16 +2,20 @@
 
   var canvas = $('#canvas'); //placement area - like paper for drawing
   var updateGridButton = $('#update-grid-button');
+  var resetGridButton = $("#reset-grid-button");
   var numberOfRowsInput = $('#number-of-rows');
   var numberOfColsInput = $('#number-of-cols');
   var newColor = "white";
   var colorCell = $("#colors td");
+  var newColNumber = 15;
+  var newRowNumber = 15;
 
-
-  makeGrid(15, 15);
+  makeGrid(newRowNumber, newColNumber);
   colorCell.on('click', selectColor);
   $('.cell').on('click', changeColor);
   updateGridButton.on('click', updateGridSize);
+  resetGridButton.on('click', resetGrid);
+
 
   function clearGrid(){
     canvas.empty();
@@ -20,9 +24,9 @@
   function updateGridSize(){
     clearGrid();
     //grab the number of columns input
-    var newColNumber = parseInt(numberOfColsInput.val());
+    newColNumber = parseInt(numberOfColsInput.val());
     //grab number of rows input
-    var newRowNumber = parseInt(numberOfRowsInput.val());
+    newRowNumber = parseInt(numberOfRowsInput.val());
 
     if(isNaN(newColNumber) || newColNumber < 1 || newColNumber > 50 || isNaN(newRowNumber) || newRowNumber < 1 || newRowNumber > 50){
         newColNumber = 15;
@@ -34,15 +38,16 @@
     //make grid based off new numbers
     makeGrid(newRowNumber, newColNumber);
     $('.cell').on('click', changeColor);
+    numberOfRowsInput.val("");
+    numberOfColsInput.val("");
   }
 
   function selectColor(event){
+    //'this' within an event refers to what triggered the event
     newColor = $(this).attr("class");
   }
 
   function changeColor(event){
-    //'this' within an event refers to what triggered the event
-    //$(this).toggleClass('red');
 
     //changing color based off a color picker
     $(this).removeClass();
@@ -63,6 +68,12 @@
       }
       canvas.append(row);
     }
+  }
+
+  function resetGrid(){
+    clearGrid();
+    makeGrid(newRowNumber, newColNumber);
+    $('.cell').on('click', changeColor);
   }
 
 }());
