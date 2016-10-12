@@ -10,9 +10,9 @@
   border: 1px solid black;
 }
 
-#canvas {
+/*#canvas {
   background-color: #000000;
-}
+} */
 
 #form-row {
   display: flex;
