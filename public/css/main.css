@@ -15,9 +15,17 @@
 }
 
 #form-row {
-  display: flex
+  display: flex;
   align-items: center;
   justify-items: center;
+}
+
+#update-grid-button {
+  margin-top: 10px;
+}
+
+#reset-grid-button {
+  margin-top: 25px;
 }
 
 .white {
