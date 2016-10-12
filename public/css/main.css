@@ -2,13 +2,30 @@
   width: 16px;
   height: 16px;
   border: 1px solid black;
+}
 
-  }
-
-.red {
-  background-color: red;
+#colors tr td {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
 }
 
 #canvas {
-  background-color: black;
+  background-color: #000000;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.peach {
+  background-color: #FFCCCC;
+}
+
+.pink {
+
+}
+
+.red {
+  background-color: #FF0000;
 }

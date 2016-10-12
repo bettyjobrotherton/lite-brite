@@ -8,61 +8,70 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <p id="error-message"></p>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
         <div class="form-group">
           <label for="number-of-rows">Number of Rows:</label>
-          <input type="number" class="form-control" id="number-of-rows" min="1" max="50">
+          <input type="text" class="form-control" id="number-of-rows">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-2">
         <div class="form-group">
           <label for="number-of-cols">Number of Columns:</label>
           <input type="text" class="form-control" id="number-of-cols">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-2">
         <button id="update-grid-button" class="btn btn-success">Update Grid Size</button>
       </div>
     </div>
-    <!-- <table id="colors">
-      <tr>
-        <td class="cell" id="white"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="peach"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="pink"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="red"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="orange"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="yellow"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="green"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="blue"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="purple"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="brown"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="grey"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="black"></td>
-      </tr>
-    </table> -->
-    <table id="canvas"></table>
+    <div class="row">
+      <div class="col-md-2">
+        <table id="colors">
+          <tr>
+            <td class="white"></td>
+          </tr>
+          <tr>
+            <td class="peach"></td>
+          </tr>
+          <tr>
+            <td class="pink"></td>
+          </tr>
+          <tr>
+            <td class="red"></td>
+          </tr>
+          <tr>
+            <td class="orange"></td>
+          </tr>
+          <tr>
+            <td class="yellow"></td>
+          </tr>
+          <tr>
+            <td class="green"></td>
+          </tr>
+          <tr>
+            <td class="blue"></td>
+          </tr>
+          <tr>
+            <td class="purple"></td>
+          </tr>
+          <tr>
+            <td class="brown"></td>
+          </tr>
+          <tr>
+            <td class="grey"></td>
+          </tr>
+          <tr>
+            <td class="black"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-10">
+        <table id="canvas"></table>
+      </div>
+    </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
   <script src="/js/app.js"></script>
