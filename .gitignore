@@ -1,1 +1,4 @@
 node_modules
+public/css/hexagon.css
+public/html/hexagon-grid.html
+public/js/hex-app.js

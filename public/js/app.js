@@ -29,7 +29,7 @@
     newRowNumber = parseInt(numberOfRowsInput.val());
 
     if(isNaN(newColNumber) || newColNumber < 1 || newColNumber > 50 || isNaN(newRowNumber) || newRowNumber < 1 || newRowNumber > 50){
-        newColNumber = 15;
+        newColNumber = 30;
         newRowNumber = 15;
         $('#error-message').text('Please enter a number between 1 and 50');
     } else {
