@@ -1,19 +1,53 @@
-.cell {
-  width: 16px;
-  height: 16px;
-  border: 1px solid black;
-}
-
-#colors tr td {
-  width: 25px;
-  height: 25px;
-  border: 1px solid black;
-}
-
 #canvas {
-  background-color: #000000;
+/*  background-color: #000000;*/
+  padding: 8px;
+  display: inline-block;
 }
 
+/*Original grid color
+.grid-color {
+  border-color: #000000;
+}*/
+
+/*hexagon code*/
+.hexagon {
+  float: left;
+  margin-right: -4.62px;
+  margin-bottom: -8px;
+}
+
+.hexagon .left {
+  float: left;
+  width: 0;
+  border-right: 4.62px solid black;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.hexagon .middle {
+  float: left;
+  border-width: 8px 4.62px;
+  border-style: solid;
+  border-color: black;
+}
+
+.hexagon .right {
+  float: left;
+  width: 0;
+  border-left: 4.62px solid black;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.hex-row {
+  clear: left;
+}
+
+.hexagon.even {
+  margin-top: 8px;
+}
+
+/*buttons and form structure*/
 #form-row {
   display: flex;
   align-items: center;
@@ -28,50 +62,66 @@
   margin-top: 25px;
 }
 
+/*Color picker*/
+#colors {
+  width: 25.5px;
+  border: 1px solid black;
+}
+
+#colors div {
+  width: 0;
+  border-width: 12.5px;
+}
+
+.border {
+  /*width: 0;*/
+  border-style: solid;
+}
+
 .white {
-  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .peach {
-  background-color: #FFCCCC;
+  border-color: #FFCCCC;
 }
 
 .pink {
-  background-color: #FFB3D9;
+  border-color: #FFB3D9;
 }
 
 .red {
-  background-color: #FF0000;
+  border-color: #FF0000;
 }
 
 .orange {
-  background-color: #FF661A;
+  border-color: #FF661A;
 }
 
 .yellow {
-  background-color: #FFFF00;
+  border-color: #FFFF00;
 }
 
 .green {
-  background-color: #33CC33;
+  border-color: #33CC33;
 }
 
 .blue {
-  background-color: #0000FF;
+  border-color: #0000FF;
 }
 
 .purple {
-  background-color: #9933FF;
+  border-color: #9933FF;
 }
 
 .brown {
-  background-color: #663300;
+  border-color: #663300;
 }
 
 .grey {
-  background-color: #8C8C8C;
+  border-color: #8C8C8C;
 }
 
 .black {
-  background-color: #000000;
+  border-color: #000000;
 }

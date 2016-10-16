@@ -7,6 +7,7 @@
 </head>
 <body>
   <div class="container">
+    
     <div class="row">
       <p id="error-message" class="text-danger"></p>
     </div>
@@ -29,48 +30,24 @@
     </div>
     <div class="row">
       <div class="col-md-2">
-        <table id="colors">
-          <tr>
-            <td class="white"></td>
-          </tr>
-          <tr>
-            <td class="peach"></td>
-          </tr>
-          <tr>
-            <td class="pink"></td>
-          </tr>
-          <tr>
-            <td class="red"></td>
-          </tr>
-          <tr>
-            <td class="orange"></td>
-          </tr>
-          <tr>
-            <td class="yellow"></td>
-          </tr>
-          <tr>
-            <td class="green"></td>
-          </tr>
-          <tr>
-            <td class="blue"></td>
-          </tr>
-          <tr>
-            <td class="purple"></td>
-          </tr>
-          <tr>
-            <td class="brown"></td>
-          </tr>
-          <tr>
-            <td class="grey"></td>
-          </tr>
-          <tr>
-            <td class="black"></td>
-          </tr>
-        </table>
+        <div id="colors">
+          <div class="white border"></div>
+          <div class="peach border"></div>
+          <div class="pink border"></div>
+          <div class="red border"></div>
+          <div class="orange border"></div>
+          <div class="yellow border"></div>
+          <div class="green border"></div>
+          <div class="blue border"></div>
+          <div class="purple border"></div>
+          <div class="brown border"></div>
+          <div class="grey border"></div>
+          <div class="black border"></div>
+        </div>
         <button id="reset-grid-button" class="btn btn-info">Reset Colors</button>
       </div>
       <div class="col-md-10">
-        <table id="canvas"></table>
+          <div id="canvas"></div>
       </div>
     </div>
   </div>
