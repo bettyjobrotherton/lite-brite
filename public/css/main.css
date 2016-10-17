@@ -1,13 +1,28 @@
+body {
+}
+
+#title {
+  background: #13355A; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #163053, #0E2F5D, #75445A, #F36A08, #B382A5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #163053, #0E2F5D, #75445A, #F36A08, #B382A5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #163053, #0E2F5D, #75445A, #F36A08, #B382A5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #163053, #0E2F5D, #75445A, #F36A08, #B382A5); /* Standard syntax */
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  display: inline;
+  color: #F48A19;
+  margin-left: 10%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
 #canvas {
-/*  background-color: #000000;*/
   padding: 8px;
   display: inline-block;
 }
-
-/*Original grid color
-.grid-color {
-  border-color: #000000;
-}*/
 
 /*hexagon code*/
 .hexagon {
@@ -54,12 +69,29 @@
   justify-items: center;
 }
 
+.form-group label {
+  color: #0E2F5D;
+  font-weight: bold;
+}
+
+#number-of-cols, #number-of-rows {
+  background-color: rgba(183, 128, 154, 0.5);
+  color: #0E2F5D;
+  font-weight: bold;
+}
+
 #update-grid-button {
   margin-top: 10px;
+  background-color: #E66E27;
+  color: #21335C;
+  font-weight: bold;
 }
 
 #reset-grid-button {
   margin-top: 25px;
+  background-color: #4B3B5B;
+  color: #E66E27;
+  font-weight: bold;
 }
 
 /*Color picker*/
